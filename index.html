@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random people</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="text-center mt-2">
+            Stel jouw team samen!
+        </h1>
+
+        <div class="row justify-content-center mt-3">
+            <div class="col-9 col-md-6 col-lg-3">
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Aantal" aria-label="Username"
+                        aria-describedby="basic-addon1" value="1" id="amountOfUsers">
+                </div>
+
+                <select class="form-select mb-3" aria-label="Default select example" id="nationality">
+                    <option selected value="">Alle landen</option>
+                    <option value="AU">Australië</option>
+                    <option value="BR">Brazilië</option>
+                    <option value="CA">Canada</option>
+                    <option value="CH">Zwitserland</option>
+                    <option value="DE">Duitsland</option>
+                    <option value="DK">Denemarken</option>
+                    <option value="ES">Spanje</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">Frankrijk</option>
+                    <option value="GB">Verenigd Koninkrijk</option>
+                    <option value="IE">Ierland</option>
+                    <option value="IR">Iran</option>
+                    <option value="NO">Noorwegen</option>
+                    <option value="NL">Nederland</option>
+                    <option value="NZ">Nieuw-Zeeland</option>
+                    <option value="TR">Turkije</option>
+                    <option value="US">Verenigde Staten</option>
+                </select>
+
+                <select class="form-select mb-3" id="inputGroupSelect04" aria-label="Vrouw of man of beide">
+                    <option selected value="0">Alle genders</option>
+                    <option value="1">Vrouw</option>
+                    <option value="2">Man</option>
+                </select>
+
+                <div class="row">
+                    <div class="col-12">
+                        <button class="col-12 btn btn-primary" type="button" id="submit">Maak aan</button>
+                    </div>
+                    <div class="col-12">
+                        <button class="col-12 btn btn-outline-secondary mt-3 btn-block" type="button"
+                            id="reset">Reset</button>
+                    </div>
+                </div>
+
+
+                <div class="alert alert-warning mt-3" role="alert" style="display:none;" id="integerAlert">
+                    Voer een geheel getal in.
+                </div>
+                <div class="alert alert-warning mt-3" role="alert" style="display:none;" id="amountAlert">
+                    Je kan maximaal 100 teamleden tegelijk aanmaken.
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col-12 col-sm-4">
+                <p class="text-center" id="woman">
+                    0 vrouwen
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <p class="text-center" id="men">
+                    0 mannen
+                </p>
+            </div>
+            <div class="col-12 col-sm-4">
+                <p class="text-center" id="average">
+                    0 jaar gemiddeld
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-5" id="peopleCards">
+
+        </div>
+    </div>
+
+    <script type="module" src="./resources/javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
